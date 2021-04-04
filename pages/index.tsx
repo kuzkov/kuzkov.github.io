@@ -1,13 +1,4 @@
-import {
-  Box,
-  Container,
-  Text,
-  Heading,
-  useColorMode,
-  VStack,
-  HStack,
-  Button,
-} from '@chakra-ui/react';
+import { Container, Text, Heading, HStack, Button } from '@chakra-ui/react';
 import React from 'react';
 
 const IndexPage = () => {
