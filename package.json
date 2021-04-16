@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "type-check": "tsc",
-    "lint": "eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix"
+    "lint": "eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix",
+    "deploy": "git subtree push --prefix=out/ origin gh-pages"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.4.2",
