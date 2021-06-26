@@ -1,12 +1,16 @@
 import React, { ReactNode } from 'react';
 import { ChakraProvider } from '@chakra-ui/react';
 import { AppProps } from 'next/app';
+import Meta from '@components/Meta';
 
 function App({ Component, pageProps }: AppProps): ReactNode {
   return (
-    <ChakraProvider>
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <>
+      <Meta />
+      <ChakraProvider>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </>
   );
 }
 
